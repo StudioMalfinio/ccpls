@@ -2,10 +2,12 @@
 allowed-tools: Bash
 ---
 
-Run `bash .claude/scripts/pm/init.sh` using a sub-agent and show me the complete output.
+Ask the user to choose their Git hosting platform:
+1. GitHub
+2. GitLab
 
-- DO NOT truncate.
-- DO NOT collapse.
-- DO NOT abbreviate.
-- Show ALL lines in full.
-- DO NOT print any other comments.
+Then run the appropriate initialization command based on their choice:
+- If they choose GitHub: run `bash .claude/scripts/pm/init.sh github`
+- If they choose GitLab: run `bash .claude/scripts/pm/init.sh gitlab`
+
+Show the complete output without truncation.
